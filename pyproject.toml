@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-mcp-server"
+version = "1.1.1"
+description = "A Model Context Protocol (MCP) server that provides weather of region"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["mcp", "model-context-protocol", "weather", "utc", "timestamp"]
+dependencies = [
+    "mcp==1.13.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/kushknows/weather-mcp-server"
+Repository = "https://github.com/kushknows/weather-mcp-server.git"
+Issues = "https://github.com/kushknows/weather-mcp-server/issues"
+
+[project.scripts]
+weather-mcp-server = "weather-mcp.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["weather-mcp*"]
+
+[tool.setuptools.package-data]
+weather-mcp-server = ["*.json"]
