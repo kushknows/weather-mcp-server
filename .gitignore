@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignore the .env file which may contain sensitive information
+.env
+.mcpregistry*
