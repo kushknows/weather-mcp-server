@@ -31,11 +31,11 @@ Repository = "https://github.com/kushknows/weather-mcp-server.git"
 Issues = "https://github.com/kushknows/weather-mcp-server/issues"
 
 [project.scripts]
-weather-mcp-server = "weather-mcp.main:main"
+weather-mcp-server = "weather_mcp.main:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["weather-mcp*"]
+include = ["weather_mcp*"]
 
 [tool.setuptools.package-data]
 weather-mcp-server = ["*.json"]
