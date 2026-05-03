@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "weather-mcp-server"
+name = "weather-mcp-server-test"
 version = "1.1.1"
 description = "A Model Context Protocol (MCP) server that provides weather of region"
 license = "MIT"
