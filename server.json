@@ -10,7 +10,7 @@
   "packages": [
     {
       "registryType": "pypi",
-      "identifier": "weather-server",
+      "identifier": "weather-mcp-server-test",
       "version": "{{VERSION}}",
       "transport": {
         "type": "stdio"
